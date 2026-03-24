@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react'
 import './App.css'
 
-const TOTAL_SLIDES = 21
+const TOTAL_SLIDES = 22
 
 const slideNames = [
   "Cover",
@@ -21,6 +21,7 @@ const slideNames = [
   "Infrastructure Sprint",
   "Frontier AI",
   "Dispersion Extremes",
+  "Semis vs. Software",
   "Global Rotation",
   "Opportunity & Caution",
   "Key Takeaways",
