@@ -1,0 +1,30 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #0a0a0a;
+  --surface: #141414;
+  --surface-hover: #1a1a1a;
+  --border: #2a2a2a;
+  --text: #e0e0e0;
+  --text-muted: #888;
+  --accent: #FFD100;
+  --accent-dim: rgba(255, 209, 0, 0.15);
+  --orange: #F6693D;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
