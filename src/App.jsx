@@ -1,21 +1,25 @@
 import { useState, useEffect, useCallback } from 'react'
 import './App.css'
 
-const TOTAL_SLIDES = 17
+const TOTAL_SLIDES = 21
 
 const slideNames = [
   "Cover",
   "Market Overview",
+  "Macro Crosscurrents",
   "The Great Rotation",
   "Three Themes",
   "Iran Conflict Primer",
   "Strait of Hormuz",
   "Inflation Fears",
-  "AI Agents Revolution",
+  "Defense Spending",
+  "AI Agents & DeepSeek",
   "Jevons Paradox",
   "Fastest Growing Companies",
+  "AI Fundraising",
   "AI Valuations",
   "Infrastructure Sprint",
+  "Frontier AI",
   "Dispersion Extremes",
   "Global Rotation",
   "Opportunity & Caution",
