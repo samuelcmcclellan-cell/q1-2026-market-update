@@ -38,8 +38,8 @@ function App() {
 
   useEffect(() => {
     const handleKey = (e) => {
-      if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); next() }
-      if (e.key === 'ArrowLeft') { e.preventDefault(); prev() }
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ') { e.preventDefault(); next() }
+      if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') { e.preventDefault(); prev() }
       if (e.key === 'Escape') setIsFullscreen(false)
       if (e.key === 'f' || e.key === 'F') setIsFullscreen(fs => !fs)
       if (e.key === 'n' || e.key === 'N') setShowNav(n => !n)
@@ -59,8 +59,18 @@ function App() {
           <span className="brand-title">Market Update: Navigating Crosscurrents</span>
         </div>
         <div className="controls">
+          <a
+            href="/slides/market-update-q1-2026.pptx"
+            download="Q1-2026-Market-Update.pptx"
+            className="download-link"
+            onClick={(e) => e.stopPropagation()}
+            title="Download PPTX"
+          >
+            <span className="download-icon">↓</span>
+            <span className="download-label">.pptx</span>
+          </a>
           <button className="control-btn" onClick={() => setShowNav(n => !n)} title="Toggle navigation (N)">
-            {showNav ? '☰' : '☰'}
+            ☰
           </button>
           <button className="control-btn" onClick={() => setIsFullscreen(f => !f)} title="Toggle fullscreen (F)">
             {isFullscreen ? '✕' : '⛶'}

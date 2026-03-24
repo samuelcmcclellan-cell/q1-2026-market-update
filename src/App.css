@@ -66,6 +66,39 @@
   border-color: #444;
 }
 
+/* Download link */
+.download-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: inherit;
+  transition: all 0.15s;
+  height: 34px;
+  box-sizing: border-box;
+}
+
+.download-link:hover {
+  background: var(--surface-hover);
+  color: var(--accent);
+  border-color: #444;
+}
+
+.download-icon {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.download-label {
+  opacity: 0.7;
+}
+
 /* Main area */
 .main-area {
   display: flex;
